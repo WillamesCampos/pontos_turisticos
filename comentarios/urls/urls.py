@@ -1,4 +1,5 @@
-from atracoes.urls import urls_back
+from comentarios.urls import urls_back
+
 
 urlpatterns = []
 

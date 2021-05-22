@@ -1,13 +1,14 @@
-from django.urls import include
 from django.urls.conf import path
+from django.urls import include
 from rest_framework import routers
-from atracoes.viewsets import AtracoesViewSet
+from comentarios.viewsets import ComentarioViewSet
 
 router = routers.SimpleRouter()
 
 router.register(
-    'atracoes', AtracoesViewSet,
-    basename='atracoes'
+    'comentarios',
+    ComentarioViewSet,
+    basename='comentarios'
 )
 
 urlpatterns = [
