@@ -1,0 +1,37 @@
+[
+    {
+      "model": "comentarios.comentariomotivo",
+      "pk": "e5eec059-4fb0-43f7-9840-e7742c513efa",
+      "fields": {
+        "descricao": "Gostei."
+      }
+    },
+    {
+        "model": "comentarios.comentariomotivo",
+        "pk": "c1427078-8b7f-4b0d-a4db-af05aae15952",
+        "fields": {
+          "descricao": "Adorei! Voltaria de novo!"
+        }
+    },
+    {
+        "model": "comentarios.comentariomotivo",
+        "pk": "bfd7dee0-1221-4cc8-919b-86c4a0eba3c4",
+        "fields": {
+          "descricao": "Mais ou menos."
+        }
+    },
+    {
+        "model": "comentarios.comentariomotivo",
+        "pk": "783d8f72-039e-4f36-906d-16415e0d9e45",
+        "fields": {
+          "descricao": "Ruim."
+        }
+    },
+    {
+        "model": "comentarios.comentariomotivo",
+        "pk": "b5717ac4-53fb-4d9a-b3e4-8c2e6f1a884d",
+        "fields": {
+          "descricao": "Péssimo."
+        }
+    }
+]

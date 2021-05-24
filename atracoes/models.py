@@ -1,5 +1,4 @@
 from uuid import uuid4
-from uuid import uuid4
 from django.db import models
 
 
@@ -25,7 +24,6 @@ class Atracoes(models.Model):
     funciona_feriados = models.BooleanField(
         db_column='fl_feriados'
     )
-
 
     def __str__(self):
         return f'{self.codigo}'

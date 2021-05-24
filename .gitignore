@@ -1,4 +1,5 @@
 db.sqlite3
 manage.py
 .env
-*/__pycache__
+__pycache__/
+**/__pycache__

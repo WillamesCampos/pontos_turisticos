@@ -8,11 +8,13 @@ from rest_framework.response import Response
 from atracoes.serializers import AtracaoSerializer
 from atracoes.models import Atracoes
 
+
 class AtracoesViewSet(
-    GenericViewSet, ListModelMixin, 
+    GenericViewSet, ListModelMixin,
     CreateModelMixin, RetrieveModelMixin
 ):
     serializer_class = AtracaoSerializer
+
     def get_queryset(self):
         return Atracoes.objects.filter(
             ativo=True
@@ -35,5 +37,3 @@ class AtracoesViewSet(
 
         serializer = self.get_serializer(queryset, many=True)
         return Response(serializer.data)
-
-    

@@ -11,7 +11,6 @@ class TestAtracoes(APITestCase):
     def setUpTestData(cls):
         cls.client = APIClient()
 
-
     def test_listar_atracoes(self):
         atracao = Atracoes.objects.create(
             nome='Uma atração teste',
@@ -42,4 +41,3 @@ class TestAtracoes(APITestCase):
             atracao.idade_minima
         )
         self.assertTrue(response.data[0]['ativo'])
-
