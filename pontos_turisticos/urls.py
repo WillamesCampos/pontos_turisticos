@@ -19,4 +19,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('atracoes.urls.urls')),
     path('', include('comentarios.urls.urls')),
+    path('', include('avaliacoes.urls.urls')),
 ]

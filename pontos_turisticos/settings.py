@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'atracoes',
     'comentarios',
+    'avaliacoes',
 ]
 
 MIDDLEWARE = [
