@@ -2,7 +2,7 @@ from uuid import uuid4
 from django.db import models
 
 
-class Atracoes(models.Model):
+class Atracao(models.Model):
     codigo = models.UUIDField(
         default=uuid4,
         primary_key=True,

@@ -2,17 +2,17 @@ from datetime import datetime, timedelta
 from rest_framework.test import APITestCase, APIClient
 from rest_framework import status
 
-from atracoes.models import Atracoes
+from atracoes.models import Atracao
 
 
-class TestAtracoes(APITestCase):
+class TestAtracao(APITestCase):
 
     @classmethod
     def setUpTestData(cls):
         cls.client = APIClient()
 
     def test_listar_atracoes(self):
-        atracao = Atracoes.objects.create(
+        atracao = Atracao.objects.create(
             nome='Uma atração teste',
             funciona_feriados=False,
             ativo=True,
