@@ -6,17 +6,17 @@ from rest_framework.mixins import (
 )
 from rest_framework.response import Response
 from atracoes.serializers import AtracaoSerializer
-from atracoes.models import Atracoes
+from atracoes.models import Atracao
 
 
-class AtracoesViewSet(
+class AtracaoViewSet(
     GenericViewSet, ListModelMixin,
     CreateModelMixin, RetrieveModelMixin
 ):
     serializer_class = AtracaoSerializer
 
     def get_queryset(self):
-        return Atracoes.objects.filter(
+        return Atracao.objects.filter(
             ativo=True
         )
 
@@ -26,7 +26,7 @@ class AtracoesViewSet(
         url_path='funciona-feriados',
     )
     def funciona_feriados(self, request):
-        queryset = Atracoes.objects.filter(
+        queryset = Atracao.objects.filter(
             ativo=True,
             funciona_feriados=True
         )

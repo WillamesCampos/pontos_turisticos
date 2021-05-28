@@ -1,5 +1,5 @@
 from django.contrib import admin
-from atracoes.models import Atracoes
+from atracoes.models import Atracao
 
 
 @admin.action(description='Inativar as atrações selecionadas')
@@ -12,8 +12,8 @@ def ativar_atracoes(modeladmin, request, queryset):
     queryset.update(ativo=True)
 
 
-@admin.register(Atracoes)
-class AtracoesAdmin(admin.ModelAdmin):
+@admin.register(Atracao)
+class AtracaoAdmin(admin.ModelAdmin):
     list_display = [
         'codigo', 'nome', 'ativo', 'idade_minima'
     ]
