@@ -31,7 +31,7 @@ class PontoTuristicoAdmin(admin.ModelAdmin):
 
 
 @admin.register(Endereco)
-class PontoTuristicoAdmin(admin.ModelAdmin):
+class EnderecoAdmin(admin.ModelAdmin):
     list_display = [
         'codigo', 'descricao'
     ]
