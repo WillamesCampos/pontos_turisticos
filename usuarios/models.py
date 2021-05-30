@@ -1,3 +1,4 @@
+from comum.models import Endereco
 from uuid import uuid4
 from django.contrib.auth.models import AbstractUser
 from django.db import models
@@ -49,6 +50,12 @@ class User(AbstractUser):
     ativo = models.BooleanField(
         default=True,
         db_column='fl_ativo'
+    )
+    endereco = models.ForeignKey(
+        Endereco,
+        on_delete=models.CASCADE,
+        null=True,
+        db_column='cd_endereco'
     )
 
     def __str__(self):
