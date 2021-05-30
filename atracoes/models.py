@@ -1,5 +1,6 @@
 from uuid import uuid4
 from django.db import models
+from comum.models import Endereco
 
 
 class Atracao(models.Model):
@@ -12,6 +13,11 @@ class Atracao(models.Model):
     nome = models.CharField(
         max_length=250,
         db_column='nm_atracao',
+    )
+    endereco = models.ForeignKey(
+        Endereco,
+        on_delete=models.CASCADE,
+        db_column='cd_endereco'
     )
     idade_minima = models.IntegerField()
     descricao = models.TextField()
