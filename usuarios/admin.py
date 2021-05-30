@@ -33,7 +33,7 @@ class UserAdmin(admin.ModelAdmin):
 @admin.register(Perfil)
 class PerfilAdmin(admin.ModelAdmin):
     list_display = [
-        'codigo', 'acesso', 'ativo'
+        'codigo', 'acesso', 'ativo', 'documento'
     ]
     search_fields = [
         'nome', 'codigo', 'email', 'ativo'
