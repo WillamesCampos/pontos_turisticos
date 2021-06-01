@@ -3,6 +3,7 @@ from rest_framework.test import APITestCase, APIClient
 from rest_framework import status
 
 from atracoes.models import Atracao
+from comum.models import Endereco
 
 
 class TestAtracao(APITestCase):
@@ -12,13 +13,20 @@ class TestAtracao(APITestCase):
         cls.client = APIClient()
 
     def test_listar_atracoes(self):
+        endereco = Endereco.objects.create(
+            latitude="30°11'22''",
+            longitude="136°17'29''",
+            cep='45908-766',
+            descricao='Rua Tal.'
+        )
         atracao = Atracao.objects.create(
             nome='Uma atração teste',
             funciona_feriados=False,
             ativo=True,
             idade_minima=10,
             horario_abertura=datetime.now(),
-            horario_fechamento=datetime.now() + timedelta(hours=8)
+            horario_fechamento=datetime.now() + timedelta(hours=8),
+            endereco=endereco
         )
 
         url = '/backend/atracoes/'
