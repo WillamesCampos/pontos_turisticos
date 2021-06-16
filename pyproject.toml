@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "pontos_turisticos"
+version = "0.1.0"
+description = "Catalogo de pontos turisticos. Serao listados pontos turisticos e as atracoes desses pontos."
+authors = ["WillamesCampos <willwjccampos@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+Django = "^3.2.4"
+djangorestframework = "^3.12.4"
+django-filter = "^2.4.0"
+python-decouple = "^3.4"
+validate-docbr = "^1.8.2"
+Pillow = "^8.2.0"
+
+[tool.poetry.dev-dependencies]
+flake8 = "^3.9.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
