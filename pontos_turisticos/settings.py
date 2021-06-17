@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'pontos',
     'usuarios',
     'comum',
+    'hospedagens',
 ]
 
 MIDDLEWARE = [
