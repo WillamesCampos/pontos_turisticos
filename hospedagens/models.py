@@ -17,6 +17,7 @@ class TipoHospedagem(models.Model):
         max_length=250,
         db_column='nm_tipohospedagem'
     )
+    descricao = models.TextField()
 
 
 class Hospedagem(models.Model):
@@ -29,8 +30,8 @@ class Hospedagem(models.Model):
     ]
 
     VOLTAGEM = [
-        ('110', '110V')
-        ('220', '220V')
+        ('110', '110V'),
+        ('220', '220V'),
         ('ambos', 'AMBOS')
     ]
 
@@ -51,19 +52,24 @@ class Hospedagem(models.Model):
     )
     descricao = models.TextField()
     ponto_turistico = models.ManyToManyField(
+        PontoTuristico,
         through='PontoHospedagem',
         related_name='cd_pontoturistico_hospedagem',
         related_query_name='cd_pontosturisticos_hospedagens'
     )
-    avaliacoes = models.ForeignKey(
+    avaliacoes = models.ManyToManyField(
         Avaliacao,
-        on_delete=models.CASCADE,
-        db_column='cd_avaliacao_hospedagem'
+        db_column='cd_avaliacao_hospedagem',
+        related_name='avaliacao_hospedagem',
+        related_query_name='avaliacoes_hospedagens'
     )
     endereco = models.ForeignKey(
         Endereco,
         on_delete=models.CASCADE,
         db_column='cd_endereco_hospedagem'
+    )
+    foto = models.ImageField(
+        upload_to='hospedagens/media'
     )
     nota_de_preco = models.IntegerField(
         choices=FAIXAS_DE_PRECO,
@@ -71,7 +77,12 @@ class Hospedagem(models.Model):
     )
     voltagem = models.CharField(
         choices=VOLTAGEM,
+        db_column='fx_voltagem',
         max_length=6
+    )
+    data_criacao = models.DateTimeField(
+        auto_now_add=True,
+        db_column='dt_criacao'
     )
 
 
