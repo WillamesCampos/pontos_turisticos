@@ -1,0 +1,98 @@
+[
+    {
+        "model": "hospedagens.tipohospedagem",
+        "pk": "a9bc3bda-b02b-49fb-bbea-d5281311bd1e",
+        "fields":{
+            "nome": "HOTEL",
+            "descricao": "O Hotel é um estabelecimento comercial que disponibiliza para estadia do hóspede, unidades ou quartos individuais, acompanhado de serviços como: recepção, serviço de quarto, café da manhã, entre outros que variam de acordo com o tamanho e categoria do hotel."
+        }
+    },
+    {
+        "model": "hospedagens.tipohospedagem",
+        "pk": "9bbb4025-a553-407d-9514-fe5e7c544204",
+        "fields":{
+            "nome": "MOTEL",
+            "descricao": "Apesar de ser popularmente conhecido no Brasil como um estabelecimento comercial para encontros amorosos, o Motel surgiu nos Estados Unidos como hotel de beira de estrada, com a finalidade de oferecer hospedagem a famílias que viajavam por conta própria. Apesar de no Brasil, esta ideia chegar distorcida, este modelo continua sendo considerado um meio de hospedagem."
+        }
+    },
+    {
+        "model": "hospedagens.tipohospedagem",
+        "pk": "53a83b2a-f56a-4761-9a7f-bce66c0e539b",
+        "fields":{
+            "nome": "POUSADA",
+            "descricao": "Pousada é um estabelecimento comercial que disponibiliza para estadia quartos individuais, chalés ou bangalôs. Este, assim como o hotel, oferece os serviços básicos de acomodação, como café de manhã e serviço de quarto, entre outros que variam de acordo com o tamanho da pousada. Este modelo de hospedagem pode chegar até no máximo 3 andares, e se diferencia por oferecer uma estadia mais intimista e familiar."
+        }
+    },
+    {
+        "model": "hospedagens.tipohospedagem",
+        "pk": "23ba1591-6401-4e66-8338-45a5d3734e9f",
+        "fields":{
+            "nome": "RESORT",
+            "descricao": "O Resort nada mais é, do que um hotel comercial, que além dos serviços básicos de acomodação, oferece também uma infraestrutura completa de lazer e entretenimento. Em sua grande maioria, disponibiliza serviços de alimentação completa, spa, academia, piscina quente e fria, recreação, trilhas e outras atividades em meio a natureza. Basicamente para um meio de hospedagem ser considerado resort, é preciso oferecer todo tipo de serviço necessário para que o hóspede seja atendido como um todo, sem precisar sair de suas mediações."
+        }
+    },
+    {
+        "model": "hospedagens.tipohospedagem",
+        "pk": "58cc1241-3c86-4b85-9082-ab1716c4997c",
+        "fields":{
+            "nome": "HOTEL FAZENDA",
+            "descricao": "O Hotel Fazenda também se assemelha ao hotel comercial, porém a diferença, como o próprio nome sugere, está em sua localização. Este se encontra em área rural, em meio a natureza, e se caracteriza por oferecer, além dos serviços básicos de acomodação e alimentação, entretenimento e vivência no campo. Trilhas, passeios a cavalo, açudes para alimentar peixes, galinhas, coelhos, pássaros entre outros animais, são atividades típicas oferecidas por esse meio de hospedagem."
+        }
+    },
+    {
+        "model": "hospedagens.tipohospedagem",
+        "pk": "e1861c20-72a6-4386-8b4c-9e98b40d9d85",
+        "fields":{
+            "nome": "BED AND BREAKFAST",
+            "descricao": "O modelo Bed and Breakfast ou em português Cama e Café, é um estabelecimento residencial, no qual seus proprietários oferecem ao hóspede um quarto para estadia, acompanhado de café da manhã, em troca de um valor determinado. Este modelo de hospedagem compartilhada ganhou força nos últimos anos, principalmente com a propagação do aplicativo Airbnb."
+        }
+    },
+    {
+        "model": "hospedagens.tipohospedagem",
+        "pk": "ae73d405-e593-4ace-9c1e-607b2a817e3d",
+        "fields":{
+            "nome": "HOTEL HISTÓRICO",
+            "descricao": "O Hotel Histórico, é um estabelecimento comercial que, assim como os demais, também oferece os serviços básicos de acomodação e alimentação. Porém o que caracteriza este meio de hospedagem, é que este é instalado em uma construção histórica, original ou restaurada. É considerado histórico, o estabelecimento que tenha sido palco de fatos culturais, ou reconhecido como patrimônio histórico ou cultural. Seja por meio formal, reconhecido pelo Estado brasileiro, ou informal, com base no conhecimento popular da sociedade."
+        }
+    },
+    {
+        "model": "hospedagens.tipohospedagem",
+        "pk": "5fdda5e7-8ae9-4e6a-848d-6761afa565a9",
+        "fields":{
+            "nome": "FLAT",
+            "descricao": "O Apart-hotel é um estabelecimento comercial semelhante a um apartamento, mas que possui as comodidades de um hotel. Este disponibiliza ao hóspede um quarto com banheiro, sala, cozinha e área de serviço, além do serviço de recepção e camareira para limpeza de quarto. Este meio de hospedagem é muito escolhido por aqueles que precisam se hospedar em um determinado local por um período mais longo."
+        }
+    },
+    {
+        "model": "hospedagens.tipohospedagem",
+        "pk": "0770c74a-f56f-4f28-ba57-a2bdc46d2090",
+        "fields":{
+            "nome": "HOSTEL",
+            "descricao": "O Hostel, ou em português, Albergue, é um estabelecimento comercial que oferece estadia, na sua grande maioria, em quartos compartilhados. Por este motivo, o valor da diária se torna mais em conta, atraindo principalmente viajantes mais jovens, ou podemos dizer, da geração millennials."
+        }
+    },
+    {
+        "model": "hospedagens.tipohospedagem",
+        "pk": "950d6ce4-df6e-4284-b9e1-38e36a32e12a",
+        "fields":{
+            "nome": "CASAS DE ALUGUEL",
+            "descricao": "Casas de Aluguel são imóveis comerciais ou residenciais, oferecidos como estadia, principalmente em períodos de alta temporada. Este modelo de hospedagem é a opção mais procurada por famílias e grupos de amigos que pretendem passar um período de férias em uma determinada cidade."
+        }
+    },
+    {
+        "model": "hospedagens.tipohospedagem",
+        "pk": "ad05fe45-10c3-4f43-9e46-fb12325a6345",
+        "fields":{
+            "nome": "GUEST HOUSE",
+            "descricao": "Guest House nada mais é do que uma casa de família. Trata-se de um estabelecimento residencial, em que os proprietários alugam por um determinado período um quarto da casa ao hóspede. É um modelo de hospedagem muito comum para viajantes em programas de intercâmbio, tendo em vista que o hóspede convive com a família e a cultura local."
+        }
+    },
+    {
+        "model": "hospedagens.tipohospedagem",
+        "pk": "b2d7449e-06ce-4388-8a4f-54a9ae84a61c",
+        "fields":{
+            "nome": "PENSÃO",
+            "descricao": "Pensão é um estabelecimento comercial que oferece moradia, em quartos compartilhados ou não, a moradores da região. Normalmente este modelo de hospedagem é utilizado por estudantes, pessoas que ficaram desabrigadas, ou que chegaram recentemente na cidade, e ainda não possuem uma boa estabilidade financeira para pagar o aluguel de uma casa."
+        }
+    }
+]

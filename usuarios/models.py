@@ -9,7 +9,9 @@ class Perfil(models.Model):
     ACESSO_CHOICES = [
         (1, 'COMUM'),
         (2, 'GUIA TURISTICO'),
-        (3, 'DONO DE ATRACAO')
+        (3, 'DONO DE ATRACAO'),
+        (4, 'HOSPEDAGEM'),
+        (5, 'RESTAURANTES')
     ]
 
     codigo = models.UUIDField(

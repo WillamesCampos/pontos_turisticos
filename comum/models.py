@@ -21,3 +21,9 @@ class Endereco(models.Model):
     cep = models.CharField(
         max_length=8
     )
+
+    def __str__(self):
+        return f'{self.codigo}'
+
+    class Meta:
+        db_table = 'tb_enderecos'
