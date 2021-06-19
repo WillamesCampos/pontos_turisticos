@@ -19,6 +19,12 @@ class TipoHospedagem(models.Model):
     )
     descricao = models.TextField()
 
+    def __str__(self):
+        return f'{self.nome}'
+
+    class Meta:
+        db_table = 'tb_tipos_hospedagens'
+
 
 class Hospedagem(models.Model):
     FAIXAS_DE_PRECO = [
@@ -84,6 +90,16 @@ class Hospedagem(models.Model):
         auto_now_add=True,
         db_column='dt_criacao'
     )
+    ativo = models.BooleanField(
+        default=True,
+        db_column='fl_ativo'
+    )
+
+    def __str__(self):
+        return f'{self.codigo}'
+
+    class Meta:
+        db_table = 'tb_hospedagens'
 
 
 class PontoHospedagem(models.Model):
@@ -103,3 +119,10 @@ class PontoHospedagem(models.Model):
         on_delete=models.DO_NOTHING,
         db_column='cd_hospedagem_pontohospedagem'
     )
+
+    def __str__(self):
+        return f'{self.codigo}'
+
+    class Meta:
+        db_table = 'tb_pontos_hospedagens'
+

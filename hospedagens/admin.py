@@ -1,3 +1,9 @@
+from hospedagens.models import Hospedagem
 from django.contrib import admin
 
-# Register your models here.
+
+@admin.register(Hospedagem)
+class HospedagemAdmin(admin.ModelAdmin):
+    list_display = [
+        'codigo', 'nome', 'tipo_hospedagem', 'ativo'
+    ]
