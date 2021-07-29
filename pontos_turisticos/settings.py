@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'usuarios',
     'comum',
     'hospedagens',
+    'restaurantes'
 ]
 
 MIDDLEWARE = [
