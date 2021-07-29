@@ -13,6 +13,9 @@ class Restaurante(models.Model):
         primary_key=True,
         db_column='cd_restaurante'
     )
+    nome = models.CharField(
+        max_length=100
+    )
     ponto_turistico = models.ForeignKey(
         PontoTuristico,
         on_delete=models.DO_NOTHING,
@@ -40,6 +43,10 @@ class Restaurante(models.Model):
     foto = models.ImageField(
         upload_to='restaurantes/media'
     )
+    faixa_de_preco = models.PositiveIntegerField()
+    ativo = models.BooleanField(
+        default=True
+    )
 
     def __str__(self):
         return f'{self.codigo}'
@@ -53,7 +60,7 @@ class AtracaoRestaurante(models.Model):
         default=uuid4,
         editable=False,
         primary_key=True,
-        db_column='cd_restaurante'
+        db_column='cd_atracao_restaurante'
     )
     restaurante = models.ForeignKey(
         Restaurante,
@@ -63,6 +70,7 @@ class AtracaoRestaurante(models.Model):
     )
     atracao = models.ForeignKey(
         Atracao,
+        on_delete=models.DO_NOTHING,
         db_column='cd_atracao',
         related_name='atracao'
     )
