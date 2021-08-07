@@ -50,7 +50,7 @@ class OpcaoTag(models.Model):
     )
 
     def __str__(self):
-        return f'{self.codigo} - peso: {self.peso}'
+        return f'{self.nome} - peso: {self.peso}'
 
     class Meta:
         db_table = 'tb_opcoes_tags'
@@ -92,7 +92,7 @@ class Tag(models.Model):
             return None
 
     def __str__(self):
-        f'{self.codigo} - {self.atributo.model}'
+        return f'{self.codigo} - {self.tipo.model}'
 
     class Meta:
         db_table = 'tb_tags'
