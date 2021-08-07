@@ -1,0 +1,110 @@
+[
+    {
+        "model": "comum.opcaotag",
+        "pk": "a60849c4-d3ae-46dd-ae63-b7637046654f",
+        "fields":{
+            "nome": "Banheiros",
+            "peso":1,
+            "descricao":""
+        }
+    },
+    {
+        "model": "comum.opcaotag",
+        "pk": "eeb2f980-7f0e-416a-b075-f5c4ecf03bc4",
+        "fields":{
+            "nome": "Organização",
+            "peso":1,
+            "descricao":""
+        }
+    },
+    {
+        "model": "comum.opcaotag",
+        "pk": "1416c3e6-48f6-4a45-bdc8-a5d179f4f817",
+        "fields":{
+            "nome": "Local Seguro",
+            "peso":1,
+            "descricao":""
+        }
+    },
+    {
+        "model": "comum.opcaotag",
+        "pk": "cb3e4bbe-66c7-436c-909e-6e9efb6257a9",
+        "fields":{
+            "nome": "Venda de acessórios",
+            "peso":1,
+            "descricao":""
+        }
+    },
+    {
+        "model": "comum.opcaotag",
+        "pk": "bd468cce-2923-4463-866b-0066c4698222",
+        "fields":{
+            "nome": "Disponível para carregar eletrônicos",
+            "peso":1,
+            "descricao":""
+        }
+    },
+    {
+        "model": "comum.opcaotag",
+        "pk": "50c94d65-d610-4fd5-a1ef-4eddd58977c7",
+        "fields":{
+            "nome": "Aeroporto próximo",
+            "peso":1,
+            "descricao":""
+        }
+    },
+    {
+        "model": "comum.opcaotag",
+        "pk": "a9db2196-ac51-47c5-8f66-d9fdbf962159",
+        "fields":{
+            "nome": "Transportes terrestres próximos",
+            "peso":1,
+            "descricao":""
+        }
+    },
+    {
+        "model": "comum.opcaotag",
+        "pk": "eac15a15-7dc3-4b14-ba89-0d37d7beca3f",
+        "fields":{
+            "nome": "Ótimo",
+            "peso":5,
+            "descricao":""
+        }
+    },
+    {
+        "model": "comum.opcaotag",
+        "pk": "7cb7edab-8c11-42a3-a83e-b43e9d1553b4",
+        "fields":{
+            "nome": "Bom",
+            "peso":4,
+            "descricao":""
+        }
+    },
+    {
+        "model": "comum.opcaotag",
+        "pk": "07f7a384-57b7-4e28-9459-80dceaaf9b01",
+        "fields":{
+            "nome": "Razoável",
+            "peso":3,
+            "descricao":""
+        }
+    },
+    {
+        "model": "comum.opcaotag",
+        "pk": "8ce24d16-33bd-4ff1-adee-39ae5b9362de",
+        "fields":{
+            "nome": "Ruim",
+            "peso":2,
+            "descricao":""
+        }
+    },
+    {
+        "model": "comum.opcaotag",
+        "pk": "2c0a61b5-27bc-4ee1-af64-03efdc15f373",
+        "fields":{
+            "nome": "Péssimo",
+            "peso":1,
+            "descricao":""
+        }
+    }
+]
