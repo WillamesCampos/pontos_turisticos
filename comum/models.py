@@ -40,8 +40,7 @@ class OpcaoTag(models.Model):
         db_column='cd_opcaotag',
     )
     nome = models.CharField(
-        max_length=150,
-        db_column='cd_nome'
+        max_length=150
     )
     descricao = models.TextField(
         null=True
